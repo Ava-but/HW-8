@@ -1,0 +1,115 @@
+:root{
+    --main-color:#0984ff;
+}
+.text-box h3:nth-child(1) {
+    color: pink;
+ 
+ }
+
+
+ #greycol {
+    color: grey;
+ }
+
+ .text-box > div > p{
+    color: red;
+ }
+
+ .text-box p:nth-child(7) {
+    color: green;
+ }
+
+ .text-box p.yellow {
+    color: yellow;
+ }
+
+main{
+    background-color:var(--main-color) ;
+}
+ .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: crosshair;
+}
+
+.lesson {
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.lesson:hover {
+    transform: scale(1.05);
+}
+
+.monday .lesson {
+    
+   
+    background-color: lightblue;
+}
+
+.tuesday .lesson {
+    background-color: lightgreen;
+}
+
+.wednesday .lesson {
+    background-color: lightpink;
+}
+
+.thursday .lesson {
+
+    background-color: lightsalmon;
+}
+
+.friday .lesson  {
+    background-color: lightyellow;
+}
+
+.lesson:first-child:before {
+    content: "▶";
+    margin-right: 5px;
+}
+
+.lesson:last-child:after {
+    content: "◀";
+    margin-left: 5px;
+}
+
+.monday:first-child .lesson:before,
+.monday:last-child .lesson:after {
+    display: none;
+}
+
+.tuesday:first-child .lesson:before,
+.tuesday:last-child .lesson:after {
+    display: none;
+}
+
+.wednesday:first-child .lesson:before,
+.wednesday:last-child .lesson:after {
+    display: none;
+}
+
+.thursday:first-child .lesson:before,
+.thursday:last-child .lesson:after {
+    display: none;
+}
+
+.friday:first-child .lesson:before,
+.friday:last-child .lesson:after {
+    display: none;
+}
+a:link{
+    color: red;
+}
+a[data-number="5"]:visited{
+    color: rgb(221, 73, 73);
+}
+
+.red:focus{
+    
+    color: red;
+}
